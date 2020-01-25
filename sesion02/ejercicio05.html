@@ -1,52 +1,23 @@
 <!DOCTYPE html>
 <html lang="es"> 
-    <head>
+    <head> 
         <meta charset="UTF-8"> 
-        <title>Devmaster1</title> 
-        <style>
-            th,
-            td{
-                border: 1px solid blue;
-                background-color: #eeffee;
-                text-align: center; 
-            }
-            
-            table{
-                border-collapse: collapse;
-                border-spacing: 0;
-            }
-        </style>
+        <title>Devmaster</title> 
     </head>
     <body>
-        <table>
-            <caption>Tabla Clasificatoria Copia America</caption>
-            <thead>
-                <tr>
-                    <th>Pais</th>
-                    <th>Calificación</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Perú</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Argentina</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>Brasil</td>
-                    <td>3</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>Total</th>
-                    <th>12</th>
-                </tr>
-            </tfoot>
-            
-        </table>
+        <!--autocomplete="off" = para anular sugerencias de las cajas de texto-->
+        <form action="contacto-exitoso.html" method="POST" autocomplete="off">
+            <!-- <input type="text" placeholder="Nombres y Apellidos"> -->
+            <!--<label for=""> Nombres y Apellidos: 
+                <input type="text"> 
+            </label> -->
+            <!--required = campos obligatorios-->
+            <label for="user">Usuario:</label>
+            <input type="text" id="user" name="user" required> <br>
+            <label for="">Contraseña</label>
+            <input type="password" id="user" name="pass" required> <br>
+            <input type="submit">
+
+        </form>
     </body>
 </html>
