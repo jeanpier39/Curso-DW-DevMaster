@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Devmaster</title> 
+    </head>
+    <body>
+        <form>
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" pattern="[A-Za-z\s]{1,50}" title="Solo texto" required><br>
+
+            <label for="dni" >DNI:</label>
+            <input type="text" id="dni" pattern="[0-9]{8}" title="Solo números" required><br>
+
+            <label for="edad">Edad</label>
+            <input type="text" id="edad" pattern="[1-9]{1,3}" title="Solo números" required><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
