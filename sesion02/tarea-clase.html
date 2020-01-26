@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Devmaster</title> 
+        <style>
+            textarea{
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>"ALIENTA A LA SELECCIÓN EN LA COPA AMERICA 2019"</h1>
+        <form action="logeo-exitoso.html" method="POST" autocomplete="off" enctype="multipart/form-data"> 
+            <labeL for="nombres">Nombres</labeL>
+            <input type="text" id="nombres" pattern="[A-Za-z\s]{1,50}" title="Solo texto" required><br>
+
+            <labeL for="pellidos">Apellidos</labeL>
+            <input type="text" id="apellidos" pattern="[A-Za-z\s]{1,50}" title="Solo texto" required><br>
+
+            <label for="dni" >DNI:</label>
+            <input type="text" id="dni" pattern="[0-9]{8}" title="Solo números" required><br>
+
+            <label for="">Sexo</label>
+            <input type="radio" name="sexo" checked>Masculino
+            <input type="radio" name="sexo">Femenino <br>
+
+            <label for="telefono" >Número Celular:</label>
+            <input type="text" id="telefono" pattern="[0-9]{9}" title="Solo números" required><br>
+
+            <label for="telefono" >Correo:</label>
+            <input type="email" required><br>
+
+            <label for="foto">Foto</label>
+            <input type="file" id="foto" name="foto" required> <br>
+
+            <label for="mensaje">Mensaje de Aliento:</label><br>
+            <textarea id="mensaje" name="mensaje" cols="40" rows="20"></textarea><br>
+
+            <button type="submit">Enviar</button>     
+            <button type="reset">Restablesca</button>   
+
+        </form>
+    </body>
+</html>
